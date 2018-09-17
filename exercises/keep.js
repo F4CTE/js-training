@@ -11,10 +11,22 @@
  * and only keep 2 characters from the third character
  *
  */
-
-
+function keepFirst(txt){
+	txt = txt.slice(0,2);
+	return txt;
+}
+function keepLast(txt){
+	txt = txt.slice(-2);
+	return txt;
+}
+function keepFirstLast(txt){
+	txt = txt.slice(3,5);
+	return txt;
+}
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(keepFirst('tatouti'), 'ta')
+assert.strictEqual(keepLast('tatouti'), 'ti')
+assert.strictEqual(keepFirstLast('tatouti'), 'ou')
 
-assert.fail('You must write your own tests')
 // End of tests */
