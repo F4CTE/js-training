@@ -8,8 +8,24 @@
  * @notions Primitive and Operators, Functions, While
  */
 
-// Your code :
-
+// Your code 
+function multiply(p1,p2){
+    let sum = 0;
+    let i = 0;
+    if(p1 < 0){
+        while (i > p1){
+            sum -= p2;
+            i--;
+        }
+    }
+    else if(p1 >= 0){
+        while (i <p1){
+            sum += p2;
+            i++;
+        }    
+    }
+    return sum;
+}
 //* Begin of tests
 const assert = require('assert')
 

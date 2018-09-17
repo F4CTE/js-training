@@ -5,8 +5,13 @@
  * and return the total
  *
  */
-
-
+function total(p1) {
+	let sum = 0;
+	for (var i = 0; i <p1.length; i++) {
+		sum += p1[i]
+	}
+	return sum;
+}
 //* Begin of tests
 const assert = require('assert')
 
