@@ -7,6 +7,14 @@
  * Of course you may not use the method directly
  *
  */
+function repeat(s,n) {
+    let repeated = "";
+    while(n > 0){   
+        repeated += s;    
+        n --; 
+    }
+    return repeated
+}
 
 //* Begin of tests
 const assert = require('assert')
