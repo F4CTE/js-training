@@ -9,7 +9,10 @@
  * Example : "How are you ?" -> "How Are You ?"
  *
  */
-
+function jadenCase(str)
+{
+ return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase()
+}
 
 
 //* Begin of tests

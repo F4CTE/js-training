@@ -8,6 +8,12 @@
  */
 
 // Your code :
+function circular() {
+  this.abc = "Hello";
+  this.circular = this;
+}
+
+var circular = new circular();
 
 //* Begin of tests
 const assert = require('assert')
